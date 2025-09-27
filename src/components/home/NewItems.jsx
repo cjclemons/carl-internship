@@ -59,7 +59,7 @@ const NewItems = () => {
     cursor: "pointer",
     color: "black",
   });
-// lose the comment
+
   const settings = {
     dots: true,
     infinite: true,
@@ -85,7 +85,7 @@ const NewItems = () => {
               <div className="small-border bg-color-2"></div>
             </div>
           </div>
-          //{" "}
+
           <div className="owl-carousel owl-theme owl-loaded owl-drag">
             {newItems.length ? (
               <Slider className="owl-theme" {...settings}>
