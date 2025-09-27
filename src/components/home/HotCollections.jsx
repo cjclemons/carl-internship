@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import authorImage from "../../images/author_thumbnail.jpg";
-import nftImage from "../../images/nftImage.jpg";
 import axios from "axios";
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,14 +13,12 @@ const HotCollections = () => {
     const { data } = await axios.get(
       `https://us-central1-nft-cloud-functions.cloudfunctions.net/hotCollections`
     );
-    console.log(data);
+
     setHotCollections(data);
   }
 
   useEffect(() => {
-    setTimeout(() => {
-      fetchHotCollections();
-    }, 5000);
+    fetchHotCollections();
   }, []);
 
   function NextArrow({ onClick }) {
