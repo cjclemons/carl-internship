@@ -8,7 +8,7 @@ import Skeleton from "../UI/Skeleton";
 
 const HotCollections = () => {
   const [hotCollections, setHotCollections] = useState([]);
-
+// comment
   async function fetchHotCollections() {
     const { data } = await axios.get(
       `https://us-central1-nft-cloud-functions.cloudfunctions.net/hotCollections`
