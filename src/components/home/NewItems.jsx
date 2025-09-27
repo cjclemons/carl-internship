@@ -15,7 +15,7 @@ const NewItems = () => {
     );
     setNewItems(data);
   }
-// comment
+// commen
   useEffect(() => {
     fetchNewItems();
   }, []);
