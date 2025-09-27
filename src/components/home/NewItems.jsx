@@ -59,7 +59,7 @@ const NewItems = () => {
     cursor: "pointer",
     color: "black",
   });
-
+// lose the comment
   const settings = {
     dots: true,
     infinite: true,
