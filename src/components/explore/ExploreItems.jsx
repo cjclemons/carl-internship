@@ -45,8 +45,8 @@ const ExploreItems = () => {
           <option value="likes_high_to_low">Most liked</option>
         </select>
       </div>
-      {exploreItems.length>0 && skeletonLoading ? (
-        exploreItems.slice(0, itemCount).map((item) => (
+      {exploreItems.length > 0 && skeletonLoading ? (
+        exploreItems.slice(0, itemCount).map((item, index) => (
           <div
             key={item.id}
             className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12"

@@ -32,7 +32,7 @@ const Explore = () => {
 
         <section aria-label="section">
           <div className="container">
-            <div className="row wow fadeIn">
+            <div className="row">
               <ExploreItems />
             </div>
           </div>
