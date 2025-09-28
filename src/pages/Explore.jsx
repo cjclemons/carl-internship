@@ -5,7 +5,7 @@ import ExploreItems from "../components/explore/ExploreItems";
 const Explore = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    // Does this work
+    
   }, []);
 
   return (
@@ -32,7 +32,7 @@ const Explore = () => {
 
         <section aria-label="section">
           <div className="container">
-            <div className="row">
+            <div className="row wow fadeIn">
               <ExploreItems />
             </div>
           </div>
