@@ -10181,6 +10181,7 @@ i.bg-color-secondary {
 #loadmore {
   display: inline-block;
   margin-top: 10px;
+  visibility: visible;
 }
 
 .d-item {
