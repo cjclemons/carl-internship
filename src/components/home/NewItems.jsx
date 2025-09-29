@@ -78,10 +78,10 @@ const NewItems = () => {
   return (
     <section id="section-items" className="no-bottom">
       <div className="container">
-        <div className="row">
+        <div className="row" data-aos="fadeIn">
           <div className="col-lg-12">
             <div className="text-center">
-              <h2>New Items</h2>
+              <h2 data-aos="fadeIn">New Items</h2>
               <div className="small-border bg-color-2"></div>
             </div>
           </div>
@@ -89,9 +89,9 @@ const NewItems = () => {
           <div className="owl-carousel owl-theme owl-loaded owl-drag">
             {newItems.length ? (
               <Slider className="owl-theme" {...settings}>
-                {newItems.map((item) => (
+                {newItems.map((item, index) => (
                   <div className="px-1">
-                    <div className="nft__item" key={item.id}>
+                    <div className="nft__item" key={index}>
                       <div className="author_list_pp">
                         <Link
                           to={`/author${item.authorId}`}
