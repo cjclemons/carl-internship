@@ -103,7 +103,11 @@ const ExploreItems = () => {
             to=""
             id="loadmore"
             className="btn-main wow lead"
-            data-aos="fadeInUp"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-easing='ease'
+            data-aos-once='true'
+        
           >
             Load more
           </Link>
