@@ -24,7 +24,14 @@ const TopSellers = () => {
               <div className="small-border bg-color-2"></div>
             </div>
           </div>
-          <div className="col-md-12" data-aos="fadeIn">
+          <div
+            className="col-md-12"
+            data-aos="fade-in"
+            data-aos-delay="500"
+            data-aos-easing="ease"
+            data-aos-duration='400'
+            data-aos-once='true'
+          >
             {topSellers.length ? (
               <ol className="author_list">
                 {topSellers.map((item) => (
@@ -40,7 +47,9 @@ const TopSellers = () => {
                       </Link>
                     </div>
                     <div className="author_list_info">
-                      <Link to={`/author/${item.authorId}`}>{item.authorName}</Link>
+                      <Link to={`/author/${item.authorId}`}>
+                        {item.authorName}
+                      </Link>
                       <span>{item.price} ETH</span>
                     </div>
                   </li>
