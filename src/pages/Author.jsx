@@ -19,11 +19,7 @@ const Author = () => {
   }
 
   useEffect(() => {
-    // new WOW.WOW({
-    //   live: false,
-    // }).init();
-
-    // window.scrollTo(0, 0);
+   
     fetchAuthorData();
   }, [fetchAuthorData]);
 
