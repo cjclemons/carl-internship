@@ -12,6 +12,7 @@ const CountDown = ({ expiryDate }) => {
     }, 1000);
 
     setIntervalId(intervalId);
+    
 
     return () => {
       clearInterval(intervalId);
