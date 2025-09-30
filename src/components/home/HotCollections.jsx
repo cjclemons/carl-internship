@@ -16,6 +16,7 @@ const HotCollections = () => {
 
     setHotCollections(data);
   }
+  // 
 
   useEffect(() => {
     fetchHotCollections();
